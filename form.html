@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Форма регистрации</h1>
+    <audio src="./images/korotkaya-melodiya-veseloe-otkryitie-animirovannyiy-fonovyiy-zvuk-igryi-40627.mp3" controls></audio>
+    <div class="images">
+    </div>
+
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Личная информация</legend>
+           <label for="username">Введите ваше имя</label>
+           <input type="text" name="username" id="username" placeholder="Введите ваше имя" required tabindex="1">
+           <br>
+           <label for="username">Введите вашу почту</label>
+           <input type="email" name="usermail" id="usermail" placeholder="example@gmail.com" tabindex="2">
+           <br>
+           <label for="username">Введите ваш пароль</label>
+           <input type="password" name="password" id="password">
+           <br>
+           <label for="age">Дата рождения</label>
+           <input type="date" name="age" id="age">
+           <br>
+           <label for="age">Аватарка</label>
+           <input type="file" name="avatar" id="avatar">
+           <br>
+           <p>Ваш пол</p>
+           <label for="male">Мужской</label>
+           <input type="radio" name="avatar" id="male" checked>
+           <label for="female">Женский</label>
+           <input type="radio" name="avatar" id="female">
+           <br>
+        </fieldset>
+        <fieldset>
+            <legend>Ваши навыки</legend>
+            <p>Ваши увлечения</p>
+            <label for="dances">Танцы</label>
+           <input type="checkbox" name="int" id="dances">
+
+           <label for="paint">Рисование</label>
+           <input type="checkbox" name="int" id="paint">
+
+           <label for="sport">Спорт</label>
+           <input type="checkbox" name="int" id="sport">
+
+            <label for="about">Напишите о себе</label>
+           <textarea name="about" id="about" cols="20" rows="3"></textarea>
+
+           <label for="skills">Навыки</label>
+           <select name="skills" id="skills" multiple>
+            <option value="JS">JS</option>
+            <option value="html" selected>  HTML</option>
+            <option value="css">CSS</option>
+            <option value="react">REACT</option>
+           </select>
+           
+        </fieldset>
+         <button type="submit">Отправить</button>
+         <button type="reset">Очистить</button> 
+    </form>
+
+
+</body>
+</html>
